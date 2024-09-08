@@ -1,0 +1,40 @@
+.checkout_ad {
+  width: 100%;
+  max-height: 140px;
+  /* width: 1000px; */
+  margin-bottom: 10px;
+}
+
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+  margin: 0 auto; 
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkout__center {
+  width: 100%;
+  text-align: center;
+}
+
+.checkout_left {
+  width: 100%; /* Ensure it fits within the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  padding: 10px; /* Add padding if needed */
+  margin-top: 10px; /* Add space between .checkout__ad and .checkout_left */
+}
+
+.checkout_right{
+  
+}
+
+
