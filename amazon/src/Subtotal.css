@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
 }
-.subtotal__gift > input {
+.subtotal__gift > input {  
   margin-right: 5px;
 }
 
