@@ -1,18 +1,14 @@
-import React from 'react'
-import CurrencyFormat from 'react-currency-format'
-import './Subtotal.css'
-import { useStateValue } from './StateProvider';
+import React from "react";
+import CurrencyFormat from "react-currency-format";
+import "./Subtotal.css";
+import { useStateValue } from "./StateProvider";
 import { getBasketTotal } from "./reducer";
 
-
-
 function Subtotal() {
-
-  const [ {basket}, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
 
   return (
-
-    <div className='subtotal'>
+    <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => (
           <>
@@ -24,7 +20,6 @@ function Subtotal() {
                 <input type="checkbox" /> This order contains a gift
               </label>
             </small>
-
           </>
         )}
         decimalScale={2}
@@ -33,15 +28,9 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-            <button className='button'>
-                <span className="button-content">
-                  Proceed to Payment                  
-                   </span>
-            </button>
-
-
+      <button className="subtotal_button">Proceed to payment</button>
     </div>
-  )
+  );
 }
 
-export default Subtotal
+export default Subtotal;
